@@ -1,0 +1,42 @@
+{
+  "name": "stock-preview",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.3",
+    "@mui/material": "^6.4.3",
+    "@mui/styled-engine-sc": "^6.4.3",
+    "@mui/x-charts": "^7.26.0",
+    "@mui/x-data-grid": "^7.26.0",
+    "@mui/x-data-grid-pro": "^7.26.0",
+    "@mui/x-date-pickers": "^7.26.0",
+    "@mui/x-date-pickers-pro": "^7.26.0",
+    "@mui/x-tree-view": "^7.26.0",
+    "@react-spring/web": "^9.7.5",
+    "axios": "^1.7.9",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "next": "15.1.6",
+    "npm": "^11.1.0",
+    "recharts": "^2.15.1",
+    "styled-components": "^6.1.15"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "typescript": "^5.7.3"
+  }
+}
