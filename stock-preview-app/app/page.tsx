@@ -53,7 +53,7 @@ const MainPage = () => {
     { field: 'country', headerName: 'Country', width: 150, editable: true },
   ];
 
-  const handleSelectionModelChange = (rowSelectionModel) => {
+  const handleSelectionModelChange = (rowSelectionModel, details) => {
     if (rowSelectionModel.length > 3) {
       setIsFullSelect(true);
       return;
@@ -63,13 +63,13 @@ const MainPage = () => {
     }
   };
 
-  const onChangeFromDate = (value) => {
+  const onChangeFromDate = (value, context) => {
     const date = dayjs(value);
     const formattedDate = date.format('YYYY-MM-DD');
     setFromDate(formattedDate)
   }
 
-  const onChangeToDate = (value) => {
+  const onChangeToDate = (value, context) => {
     const date = dayjs(value);
     const formattedDate = date.format('YYYY-MM-DD');
     setToDate(formattedDate)
