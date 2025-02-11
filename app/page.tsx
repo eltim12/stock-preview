@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Container, Typography, Box, Button, Alert, Grid2 as Grid, Stack } from "@mui/material";
-import { DataGrid, GridColDef, GridSelectionModel } from '@mui/x-data-grid';
+import { DataGrid, GridColDef, GridRowSelectionModel } from '@mui/x-data-grid';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -11,7 +11,7 @@ import axios from 'axios';
 import dayjs from 'dayjs'
 
 const MainPage = () => {
-  const [selectionModel, setSelectionModel] = useState<GridSelectionModel>([]);
+  const [selectionModel, setSelectionModel] = useState<GridRowSelectionModel>([]);
   const [isFullSelect, setIsFullSelect] = useState(false);
   const [rows, setRows] = useState([]);
   const [fromDate, setFromDate] = useState("");
